@@ -15,4 +15,11 @@ export class HomeComponent implements OnInit {
 
 public isLoggedIn = localStorage.getItem('isLoggedIn');
 
+  logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('access_token');
+    localStorage.setItem('isLoggedIn',"false");
+  }
+
+
 }

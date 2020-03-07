@@ -3,6 +3,8 @@
 
   <app-main-dashboard></app-main-dashboard>
 
+  <a [routerLink]="['/login']" (click)="logout()">Logout</a>
+
 </div>
 
 <div *ngIf="!isLoggedIn">
